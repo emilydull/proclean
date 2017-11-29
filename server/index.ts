@@ -21,5 +21,6 @@ app.use((req, res, next) => {
 
 app.get('*', stateRouting);
 
-app.listen(3000);
-console.log("I'm listening"!);
+app.listen(process.env.PORT || 3000, () => {
+    console.log("I'm listening"!);
+});
