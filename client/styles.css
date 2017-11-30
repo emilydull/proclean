@@ -370,7 +370,7 @@ input {
 
 input:hover {
 	background: white;
-	color: gray;
+	color: black;
 }
 
 textarea {
@@ -396,7 +396,7 @@ textarea {
 
 textarea:hover {
   background: white;
-  color: gray;
+  color: black;
 }
 
 #submit {
@@ -409,4 +409,9 @@ textarea:hover {
 
 #submit:hover {
 	background: #0084a4;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px #4b4b4b inset;
+	-webkit-text-fill-color: white !important;
 }
