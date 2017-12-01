@@ -27,6 +27,7 @@
     "express-session": "^1.15.6",
     "mysql": "^2.15.0",
     "node": "^9.2.0",
+    "sendgrid": "^5.2.3",
     "typescript": "^2.6.1"
   }
 }
