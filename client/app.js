@@ -7,4 +7,8 @@ angular.module('ProCleanApp', ['ngRoute', 'ngResource', 'ProClean.directives', '
 		templateUrl: 'views/home.html', 
 		controller: 'ContactController'
 	})
+	.when('/services', {
+		templateUrl: 'views/services.html',
+		controller: 'ContactController'
+	})
 }])

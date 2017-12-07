@@ -1,5 +1,9 @@
 angular.module('ProClean.controllers', [])
-.controller('ContactController', ['$scope', 'ContactForm', function($scope, ContactForm) {
+
+.controller('ContactController', ['$scope', 'ContactForm', '$anchorScroll', function($scope, ContactForm, $anchorScroll) {
+	$anchorScroll('top');
+	$anchorScroll('#top');
+
 	$scope.send = function() {
 		let contact = new ContactForm({
 			from: $scope.email,
@@ -9,7 +13,9 @@ angular.module('ProClean.controllers', [])
 		});
 
 		contact.$save(function() {
-			alert('Thank you for your message!')
+			$scope.email = "";
+			$scope.message = "";
+			alert('Thank you for your message!');
 		}, function(err) {
 			console.log(err);
 		})
