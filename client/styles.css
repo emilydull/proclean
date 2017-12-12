@@ -346,8 +346,40 @@ nav li {
 }
 
 .service-para {
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 	margin-top: 50px;
+}
+
+.second-service-row {
+	margin-bottom: 40px;
+}
+
+.service-subheading {
+	color: #00657c;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	letter-spacing: 8px;
+	margin-top: 70px;
+}
+
+
+/* Service Areas Styles */
+
+.area-heading {
+	text-align: center;
+	color: rgb(87, 87, 87);
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-weight: 800;
+}
+
+.areas-subheading {
+	color: #00657c;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 5px;
 }
 
 /* Footer Styles */
@@ -386,7 +418,7 @@ nav li {
 	letter-spacing: 5px;
 	font-size: 18px;
 	overflow-wrap: break-word;
-	padding: 20px;
+	/* padding: 20px; */
 }
 
 .socialmedias {
