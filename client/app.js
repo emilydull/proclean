@@ -1,4 +1,4 @@
-angular.module('ProCleanApp', ['ngRoute', 'ngResource', 'ProClean.directives', 'ProClean.controllers', 'ProClean.factories'])
+angular.module('ProCleanApp', ['ngRoute', 'ngResource', 'ProClean.directives', 'ProClean.controllers', 'ProClean.factories', 'ProClean.services'])
 
 .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
 	$locationProvider.html5Mode(true);

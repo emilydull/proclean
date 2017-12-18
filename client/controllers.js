@@ -1,6 +1,6 @@
 angular.module('ProClean.controllers', [])
 
-.controller('ContactController', ['$scope', 'ContactForm', '$anchorScroll', function($scope, ContactForm, $anchorScroll) {
+.controller('ContactController', ['$scope', 'ContactForm', '$anchorScroll', '$location', 'SEOService', function($scope, ContactForm, $anchorScroll, $location, SEOService) {
 	$anchorScroll('top');
 	$anchorScroll('#top');
 
@@ -20,4 +20,11 @@ angular.module('ProClean.controllers', [])
 			console.log(err);
 		})
 	}
+
+	SEOService.setSEO({
+		title: 'ProClean Pressure Washing',
+		description: 'Description', //TODO
+		url: $location.url()
+	});
+
 }])
