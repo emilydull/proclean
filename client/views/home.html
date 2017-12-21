@@ -1,17 +1,177 @@
-<main-nav></main-nav>
-<a id="top"></a>
-<div class="jumbotron jumbotron-fluid jumboHome">
-	<div class="content-container">
-		<p class="main-caption">Exterior Cleaning & Pressure Washing Solutions</p>
-		<h1 class="display-3">ProClean
-			<br> Pressure Washing</h1>
-		<a class="btn main-btn" href="#" role="button">Read Our Reviews</a>
-		<a class="btn main-btn" href="#" role="button">Request Appointment</a>
+<script>
+	$(function () {
+		$("#datepicker").datepicker();
+	});
+</script>
+
+<div class="modal fade" id="appointmentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Appointment Request</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="https://formcarry.com/s/ByWvzmDfG" method="POST" accept-charset="UTF-8">
+					<div class="form-group">
+						<label for="recipient-name" class="form-control-label bold-label">Name</label>
+						<input type="text" class="form-control" id="recipient-name" name="Name" required>
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="form-control-label  bold-label">Email</label>
+						<input type="email" class="form-control" name="Email" required>
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="form-control-label bold-label">Phone Number</label>
+						<input type="tel" class="form-control" name="Phone Number" required>
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="form-control-label bold-label">Address</label>
+						<input type="text" class="form-control" name="Address" required>
+					</div>
+
+					<div class="form-group">
+						<label for="message-text" class="form-control-label bold-label">Square Feet (Optional)</label>
+						<input type="" class="form-control" name="SqFeet">
+					</div>
+					<div class="form-group">
+						When would you like us to come by?
+						<br>
+						<label for="message-text" class="form-control-label bold-label">Date</label>
+						<input type="text" class="form-control" name="Date" id="datepicker" required>
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="form-control-label bold-label">Time</label>
+						<input type="text" class="form-control" name="Time" required>
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="form-control-label bold-label">Questions and/or Comments</label>
+						<textarea class="form-control" name="Question/Comments"></textarea>
+					</div>
+					<input type="submit" id="appointment-submit" value="Submit">
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+			</div>
+		</div>
 	</div>
 </div>
+
+
+<div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Quote Request</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="https://formcarry.com/s/ByWvzmDfG" method="POST" accept-charset="UTF-8">
+					<div class="form-group">
+						<label for="recipient-name" class="form-control-label bold-label">Name</label>
+						<input type="text" class="form-control" id="recipient-name" name="Name" required>
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="form-control-label  bold-label">Email</label>
+						<input type="email" class="form-control" name="Email" required>
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="form-control-label bold-label">Phone Number</label>
+						<input type="tel" class="form-control" name="Phone Number" required>
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="form-control-label bold-label">Address</label>
+						<input type="text" class="form-control" name="Address" required>
+					</div>
+
+					<div class="form-group">
+						<label for="message-text" class="form-control-label bold-label">Square Feet (Optional)</label>
+						<input type="" class="form-control" name="SqFeet">
+					</div>
+					<div class="form-group">
+						When would you like us to come by?
+						<br>
+						<label for="message-text" class="form-control-label bold-label">Date</label>
+						<input type="text" class="form-control" name="Date" id="datepicker" required>
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="form-control-label bold-label">Time</label>
+						<input type="text" class="form-control" name="Time" required>
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="form-control-label bold-label">Questions and/or Comments</label>
+						<textarea class="form-control" name="Question/Comments"></textarea>
+					</div>
+					<input type="submit" id="appointment-submit" value="Submit">
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<main-nav></main-nav>
+<a id="top"></a>
+
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+	<div class="carousel-inner" role="listbox">
+		<div class="carousel-item active" style="background-image: url('media/mainbanner.jpg')">
+		</div>
+		<div class="carousel-item" style="background-image: url('media/mainbanner.jpg')">
+		</div>
+		<div class="carousel-item" style="background-image: url('media/mainbanner.jpg')">
+		</div>
+
+		<div class="content-container">
+			<p class="main-caption">Exterior Cleaning & Pressure Washing Solutions</p>
+			<h1 class="display-3">ProClean
+				<br> Pressure Washing</h1>
+			<a class="btn" id="main-btn" target="_blank" href="https://www.facebook.com/ProCleanPressureWashingLLC/" role="button">Read Our Reviews</a>
+			<a class="btn" id="main-btn" data-toggle="modal" data-target="#appointmentModal" role="button">Request Appointment</a>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+
+
+	</div>
+
+	<script>
+		$('#exampleModal').on('show.bs.modal', function (event) {
+			var button = $(event.relatedTarget) // Button that triggered the modal
+			var recipient = button.data('whatever') // Extract info from data-* attributes
+			// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+			// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+			var modal = $(this)
+			modal.find('.modal-title').text('Appointment Request')
+		})
+	</script>
+</div>
+
+
 <div class="jumbotron jumbotron-fluid jumboCall">
 	<h1 class="lead">Need help with power washing? Call us now: (205) 382-3731</h1>
 </div>
+
+
+
 <div class="container">
 	<h1 class="bold-heading">Lorem ipsum dolor</h1>
 	<p class="filler center">Fashion axe normcore humblebrag, raw denim quinoa meh pabst brunch celiac. Church-key seitan keytar blue bottle. Tofu tilde
@@ -48,9 +208,10 @@
 			<p class="filler center">Echo park kickstarter gluten-free cronut authentic narwhal. Venmo hashtag snackwave live-edge kale chips. Kickstarter
 				everyday carry forage fingerstache, keffiyeh tacos shaman messenger bag. Portland drinking vinegar food truck edison
 				bulb cliche mixtape taiyaki.
-			<br><br>
-			<a class="btn sub-btn small" href="#" role="button">Request a Quote</a>
-		</p>
+				<br>
+				<br>
+				<a class="btn sub-btn small" href="#" role="button">Request a Quote</a>
+			</p>
 
 		</div>
 		<div class="col-sm">
@@ -59,8 +220,10 @@
 			<hr>
 			<p class="filler center">Echo park kickstarter gluten-free cronut authentic narwhal. Venmo hashtag snackwave live-edge kale chips. Kickstarter
 				everyday carry forage fingerstache, keffiyeh tacos shaman messenger bag. Portland drinking vinegar food truck edison
-				bulb cliche mixtape taiyaki.<br><br>
-				<a class="btn sub-btn small" href="https://www.facebook.com/ProCleanPressureWashingLLC/"  target="_blank" role="button">Read Our Reviews</a>
+				bulb cliche mixtape taiyaki.
+				<br>
+				<br>
+				<a class="btn sub-btn small" href="https://www.facebook.com/ProCleanPressureWashingLLC/" target="_blank" role="button">Read Our Reviews</a>
 			</p>
 
 		</div>
@@ -71,7 +234,8 @@
 			<p class="filler center">Echo park kickstarter gluten-free cronut authentic narwhal. Venmo hashtag snackwave live-edge kale chips. Kickstarter
 				everyday carry forage fingerstache, keffiyeh tacos shaman messenger bag. Portland drinking vinegar food truck edison
 				bulb cliche mixtape taiyaki.
-				<br><br>
+				<br>
+				<br>
 				<a class="btn sub-btn small" href="#" role="button">Browse Our Gallery</a>
 			</p>
 
@@ -80,19 +244,19 @@
 </div>
 <div class="jumbotron jumbotron-fluid jumboTestimonial">
 	<div class="container">
-	<div class="circle">
+		<div class="circle">
 			<i class="fa fa-quote-right" id="quote-icon" style="font-size:24px"></i>
-	</div>
-	<h3 id="quote-heading">the very best of the best</h3>
-	<p class="filler center">"Echo park kickstarter gluten-free cronut authentic narwhal. Venmo hashtag snackwave live-edge kale chips. Kickstarter
+		</div>
+		<h3 id="quote-heading">the very best of the best</h3>
+		<p class="filler center">"Echo park kickstarter gluten-free cronut authentic narwhal. Venmo hashtag snackwave live-edge kale chips. Kickstarter
 			everyday fingerstache, vinegar food truck cliche mixtape taiyaki."</p>
-			<p id="quote-name">-Emily Birmingham, AL</p>
-</div>
+		<p id="quote-name">-Emily Birmingham, AL</p>
+	</div>
 </div>
 <div class="jumbotron jumbotron-fluid jumboRequest">
 	<div class="container content-container">
 		<h1 class="bold-heading white">something something today</h1>
-		<a class="btn request-btn" href="#" role="button">Request Appointment</a>
-	</div>	
+		<a class="btn" id="request-btn" data-toggle="modal" data-target="#appointmentModal">Request Appointment</a>
 	</div>
-	<main-footer></main-footer>
+</div>
+<main-footer></main-footer>

@@ -18,12 +18,31 @@
 				<h1 class="col-heading white">Quick Contact</h1>
 				
 				<form ng-submit="send()" id="form">
-							<!-- <input id="name" type="text" ng-model="name" placeholder="NAME" required> -->
-							<input id="email" type="email" ng-model="email" placeholder="EMAIL" required>
-							<!-- <input id="name" type="text" ng-model="phone" placeholder="PHONE" required> -->
+							<input id="email" type="email" ng-model="email" placeholder="YOUR EMAIL" required>
 							<textarea id="message" type="text" ng-model="message" placeholder="MESSAGE" required></textarea>
-					<input id="submit" type="submit" value="Submit">
-				</form>
+							<input type="submit" value="Submit" id="submit" data-toggle="modal" data-target="#myModal">
+						</form>
+						
+							  <!-- Modal -->
+							  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <h5 class="modal-title" id="exampleModalLabel">Thanks for reaching out to us!</h5>
+									  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									  </button>
+									</div>
+									<div class="modal-body">
+										We'll get back to you shortly. Bon appetit!
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+								  </div>
+								</div>
+							  </div>
+				
 
 				</div>
 		</div>

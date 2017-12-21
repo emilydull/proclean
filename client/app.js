@@ -15,4 +15,8 @@ angular.module('ProCleanApp', ['ngRoute', 'ngResource', 'ProClean.directives', '
 		templateUrl: 'views/areas.html',
 		controller: 'ContactController'
 	})
+	.when('/gallery', {
+		templateUrl: 'views/gallery.html',
+		controller: 'ContactController'
+	})
 }])

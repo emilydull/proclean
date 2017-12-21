@@ -15,7 +15,6 @@ angular.module('ProClean.controllers', [])
 		contact.$save(function() {
 			$scope.email = "";
 			$scope.message = "";
-			alert('Thank you for your message!');
 		}, function(err) {
 			console.log(err);
 		})

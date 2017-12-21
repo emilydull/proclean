@@ -47,12 +47,46 @@ nav li {
 
 /****** Homepage Styles *******/
 
+
+/*Appointment Form Styles */
+
+.bold-label {
+	font-weight: bold;
+}
+
+#appointment-submit {
+	background-color: #0084a4;
+	font-size: 16px;
+	border-radius: 8px;
+	width: 200px;
+	text-align: center;
+}
+
+#appointment-submit:hover {
+	color: white;
+	background-color: #006579;
+}
+
+/*****/
+
+
+
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+	background: no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+
 .jumboHome {
 	position: relative;
-	background: url('media/mainbanner.jpg') fixed no-repeat;
-	height: 730px;
-	background-size: cover;
-	margin-bottom: 0px;
+	/* height: 730px; */
+	/* background-size: cover; */
+	/* margin-bottom: 0px; */
+	background: url("media/mainbanner.jpg");
 	font-family: 'Roboto', sans-serif;
 	color: white;
 
@@ -71,6 +105,7 @@ nav li {
 	font-size: 20px;
 	letter-spacing: 5px;
 	margin-top: 50px;
+	color: white;
 }
 
 .display-3 {
@@ -80,6 +115,7 @@ nav li {
 	font-size: 80px;
 	letter-spacing: 15px;
 	font-weight: bold;
+	color: white;
 }
 
 
@@ -88,7 +124,7 @@ nav li {
 	height: 180px;
 }
 
-.main-btn {
+#main-btn {
 	width: 220px;
 	border: white 1.2px solid;
 	color: white;
@@ -97,7 +133,7 @@ nav li {
 	transition: .3s;
 }
 
-.main-btn:hover {
+#main-btn:hover {
 	background: #ffffff62;
 	font-weight: bold;
 	color: white;
@@ -272,7 +308,7 @@ nav li {
 	color: white;
 }
 
-.request-btn {
+#request-btn {
 	width: 260px;
 	border: white 1.2px solid;
 	color: white;
@@ -282,7 +318,7 @@ nav li {
 	left: 50%;
 }
 
-.request-btn:hover {
+#request-btn:hover {
 	background: #ffffff62;
 	font-weight: bold;
 	color: white;
@@ -293,9 +329,13 @@ nav li {
 .jumboServices {
 	position: relative;
 	font-family: 'Roboto', sans-serif;
-	height: 500px;
-	background: url('media/services-banner.jpg') no-repeat 0px -200px;
+	height: 400px;
+	background-size: cover;
+	background: url('media/services-banner.jpg') no-repeat 0px -150px;
 	color: white;
+	background-size: cover;
+	margin-bottom: 0px;
+
 }
 
 .services-header-container {
@@ -507,6 +547,6 @@ textarea:hover {
 }
 
 input:-webkit-autofill {
-	-webkit-box-shadow: 0 0 0 30px #4b4b4b inset;
+	-webkit-box-shadow: 0 0 0 30px #949494 inset;
 	-webkit-text-fill-color: white !important;
 }
